@@ -1,8 +1,20 @@
 <template>
-    <h1>Welcome Recipes</h1>
+  <md-card>
+    <md-card-header>
+      <h1>Welcome Recipes</h1>
+    </md-card-header>
+    <md-list>
+      <ingredient></ingredient>
+    </md-list>
+  </md-card>
 </template>
 <script>
-    export default {
-        name: 'app-recipes'
-    };
+import Ingredient from './components/ingredient';
+
+export default {
+  name: 'app-recipes',
+  components: {
+    Ingredient
+  }
+};
 </script>

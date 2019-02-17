@@ -86,9 +86,10 @@
     <ul>
       <li><button @click="increase()">increase</button></li>
       <li>count: {{ getCount }}</li>
+      <li><button @click="reset()">reset</button></li>
     </ul>
     <ul>
-      <li><button @click="reset()">reset</button></li>
+      <li><button @click="goToRecipes()">Recipes</button></li>
     </ul>
   </div>
 </template>
@@ -113,6 +114,9 @@ export default {
     },
     reset() {
       this.$store.dispatch('home/resetAction');
+    },
+    goToRecipes() {
+      this.$router.push({ name: 'recipes' });
     }
   }
 };

@@ -70,3 +70,73 @@ export default {
   }
 };
 ```
+
+```json
+[{
+  id: 1,
+  title: 'Some Article',
+  author: {
+    id: 1,
+    name: 'Dan'
+  }
+}, {
+  id: 2,
+  title: 'Other Article',
+  author: {
+    id: 1,
+    name: 'Dan'
+  }
+}]
+```
+
+```json5
+{
+  articles: [1, 2],
+  users: [1],
+  entities: {
+    articles: {
+      1: {
+        id: 1,
+        title: 'Some Article',
+        author: 1
+      },
+      2: {
+        id: 2,
+        title: 'Other Article',
+        author: 1
+      }
+    },
+    users: {
+      1: {
+        id: 1,
+        name: 'Dan'
+      }
+    }
+  }
+}
+```
+
+```javascript
+const state = {
+    ids: [ 'recipe1', 'recipe2', 'recipe3'],
+    entities: {
+      recipe1: {
+        name: 'macarrones con tomate',
+        time: 123413240981234,
+        ingredients: [ 'ingr1', 'ingr2', 'ingr3']
+      },
+      recipe2: {
+        name: 'lentejas',
+        time: 123413240981234,
+        ingredients: [ 'ingr6', 'ingr8', 'ingr9']
+      },
+      recipe3: {
+        name: 'cocido madrileño',
+        time: 123413240981234,
+        ingredients: [ 'ingr6', 'ingr8', 'ingr9']
+      }
+    },
+    entitiesStatus: []
+};
+
+```
