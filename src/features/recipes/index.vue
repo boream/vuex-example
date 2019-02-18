@@ -10,11 +10,20 @@
 </template>
 <script>
 import Ingredient from './components/ingredient';
+import { upsertEntityAction } from '../shared-store/types';
 
 export default {
   name: 'app-recipes',
   components: {
     Ingredient
+  },
+  beforeCreate() {
+    this.$store.registerModule('recipes', )
+  },
+  methods: {
+    createNewIngredient() {
+      this.$store.dispatch('')
+    }
   }
 };
 </script>

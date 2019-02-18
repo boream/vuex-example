@@ -11,10 +11,14 @@ const state = () => ({
   status: UPDATED_STATUS
 });
 
-export default {
+const module = {
   namespaced: true,
   state,
   mutations,
   actions,
   getters
 };
+
+export createModule() {
+  return module;
+}
