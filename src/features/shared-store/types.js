@@ -11,3 +11,8 @@ export const upsertEntityAction = 'upsertEntityAction';
 export const deleteEntityAction = 'deleteEntityAction';
 export const fetchEntitiesAction = 'fetchEntitiesAction';
 
+export const entitiesGetter = 'entitiesGetter';
+export const entitiesArrayGetter = 'entitiesArrayGetter';
+export const moduleStatusGetter = 'moduleStatusGetter';
+export const entitesStatusGetter = 'entitesStatusGetter';
+

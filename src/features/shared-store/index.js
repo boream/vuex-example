@@ -1,6 +1,7 @@
 import { UPDATED_STATUS } from './types';
 import mutations from './mutations';
 import actions from './actions';
+import getters from './getters';
 
 // returns function to isolate state between different stores
 const state = () => ({
@@ -9,11 +10,6 @@ const state = () => ({
   entitiesStatus: {},
   status: UPDATED_STATUS
 });
-
-const getters = {
-  getCount: state => state.count,
-  getMsg: state => state.msg
-};
 
 export default {
   namespaced: true,
